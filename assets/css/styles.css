@@ -1,8 +1,8 @@
 /* Element selectors */
 
 body {
-    background-image: url(../images/ignasi_pattern_s.png);
-    background-repeat: repeat;
+    /* background-image: url(../images/ignasi_pattern_s.png);
+    background-repeat: repeat; */
     margin-bottom: 35px;
     font-family: 'Ubuntu','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -51,8 +51,18 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: grey;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 30px;
+  }
+
+  .sidebar-links {
+      width: 180px;
+      margin-left: 10px;
+      
+  }
+
+  .list-group-item {
+    background-color: grey;
   }
