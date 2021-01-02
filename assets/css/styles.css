@@ -1,0 +1,44 @@
+/* Element selectors */
+
+body {
+    background-image: url(../images/ignasi_pattern_s.png);
+    background-repeat: repeat;
+    margin-bottom: 35px;
+}
+
+footer.border-top {
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+/* Class selectors */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px; 
+    line-height: 25px;
+    border-top: 5px solid #17a2b8!important;
+    color: grey;
+  }
+  
+  .my-list {
+      list-style-position: inside;
+  }
+
+  .my-list-item {
+     margin: 0 0 10px 5px;
+  }
+
+  .navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
