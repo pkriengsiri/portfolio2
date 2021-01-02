@@ -4,15 +4,16 @@ body {
     background-image: url(../images/ignasi_pattern_s.png);
     background-repeat: repeat;
     margin-bottom: 35px;
+    font-family: 'Ubuntu','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer.border-top {
     margin-top: 5px;
 }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* h1 {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+} */
 
 html {
     position: relative;
