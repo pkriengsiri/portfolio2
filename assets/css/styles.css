@@ -1,24 +1,35 @@
 /* Element selectors */
 
+a {
+    color: #F1DCA7;
+}
+
+a:hover {
+    color: #FFCB69;
+}
+
 body {
     /* background-image: url(../images/ignasi_pattern_s.png);
     background-repeat: repeat; */
     margin-bottom: 35px;
     font-family: 'Ubuntu','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #BAA587;
+    color: #fff;
 }
 
 footer.border-top {
     margin-top: 5px;
 }
 
-/* h1 {
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-} */
-
 html {
     position: relative;
     min-height: 100%;
   }
+
+
+#main {
+    background-color: #9B9B7A;
+}
 
 /* Class selectors */
 
@@ -40,6 +51,10 @@ html {
      margin: 0 0 10px 5px;
   }
 
+  .navbar {
+      background-color: #797D62;
+  }
+
   .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -51,7 +66,7 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color: #B58463;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 30px;
@@ -64,5 +79,5 @@ html {
   }
 
   .list-group-item {
-    background-color: grey;
+    background-color: #B58463;
   }
