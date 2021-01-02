@@ -14,7 +14,7 @@ body {
     /* background-image: url(../images/ignasi_pattern_s.png);
     background-repeat: repeat; */
     margin-bottom: 35px;
-    font-family: 'Ubuntu','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #BAA587;
     color: #fff;
 }
@@ -30,7 +30,8 @@ html {
 
 
 #main {
-    background-color: #9B9B7A;
+    background-color: #d08c60;
+    color: #000;
 }
 
 /* Class selectors */
@@ -91,6 +92,11 @@ html {
 
   #close-menu:hover {
       color: #333; 
+  }
+
+  #headshot {
+      border-radius: 50%;
+      width: 250px;
   }
 
   #open-menu:hover {
