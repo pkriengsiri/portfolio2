@@ -2,6 +2,10 @@ $(document).ready(function() {
     console.log("hello world");
 
 
+    function closeSidebar() {
+        $(".sidebar").css("width","0px");
+    }
+    
     function showSidebar() {
         console.log("clicked");
         $(".sidebar").css("width","200px");
@@ -9,6 +13,7 @@ $(document).ready(function() {
     }
 
     $("#hamburger-open").on("click", showSidebar);
+    $("#hamburger-close").on("click", closeSidebar);
 
 
 }); 

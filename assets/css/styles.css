@@ -2,10 +2,12 @@
 
 a {
     color: #F1DCA7;
+    
 }
 
 a:hover {
     color: #FFCB69;
+    text-decoration: none;
 }
 
 body {
@@ -69,7 +71,7 @@ html {
     background-color: #B58463;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .sidebar-links {
@@ -81,3 +83,16 @@ html {
   .list-group-item {
     background-color: #B58463;
   }
+
+  #close-menu {
+      float:right;
+      margin-right: 10px
+  }
+
+  #close-menu:hover {
+      color: #333; 
+  }
+
+  #open-menu:hover {
+    color: #333; 
+}
