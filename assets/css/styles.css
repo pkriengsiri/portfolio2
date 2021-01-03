@@ -1,11 +1,11 @@
 /* Element selectors */
 
 a {
-  color: #f1dca7;
+  color: #A9D6E5;
 }
 
 a:hover {
-  color: #ffcb69;
+  color: #89C2D9;
   text-decoration: none;
 }
 
@@ -13,7 +13,7 @@ body {
   margin-bottom: 35px;
   font-family: "Lato", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #baa587;
+  background-color: #2C7DA0;
   color: #fff;
 }
 
@@ -27,6 +27,11 @@ html {
 }
 
 /* Class selectors */
+
+.card-custom {
+    margin: 20px;
+    width: 250px;
+}
 
 .footer {
   position: absolute;
@@ -47,7 +52,7 @@ html {
 }
 
 .navbar {
-  background-color: #797d62;
+  background-color: #013A63;
 }
 
 .navbar-brand {
@@ -61,7 +66,7 @@ html {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #b58463;
+  background-color: #01497C;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 20px;
@@ -73,7 +78,7 @@ html {
 }
 
 .list-group-item {
-  background-color: #b58463;
+  background-color: #01497C;
 }
 
 #main-header {
@@ -85,10 +90,11 @@ position: absolute;
 #close-menu {
   float: right;
   margin-right: 10px;
+  color: #A9D6E5;
 }
 
-#close-menu:hover {
-  color: #333;
+#open-menu:hover, #close-menu:hover {
+  color: #61A5C2;
 }
 
 #circle-image {
@@ -100,13 +106,13 @@ position: absolute;
   border: 2px solid #fff;
 }
 
-#open-menu:hover {
-  color: #333;
+#open-menu {
+    color: #A9D6E5;
 }
 
 #main {
-  background-color: #d08c60;
-  color: #000;
+  background-color: #012A4A;
+  color: #FFF;
 }
 
 #banner {
