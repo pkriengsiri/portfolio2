@@ -3,7 +3,7 @@ $(document).ready(function () {
   var project = {
     name: "",
     description: "",
-    technologies: [],
+    technologies: "",
     repository: "",
     deployed: "",
     image: "",
@@ -15,7 +15,8 @@ $(document).ready(function () {
       name: "What's in the Box?",
       description:
         "An application for tracking the context of boxes packed for household moving and storage projects",
-      technologies: [],
+      technologies:
+        "HTML, CSS, JavaScript, jQuery, BootStrap, Font-Awesome, jQuery QR code library, paste.ee API, html2pdf API, orghunter charity search API, google maps API",
       repository: "https://github.com/pkriengsiri/whats-in-the-box",
       deployed: "https://github.com/pkriengsiri/whats-in-the-box",
       image: "./assets/images/box.png",
@@ -30,13 +31,13 @@ $(document).ready(function () {
   function createProjectCards() {
     for (var i = 0; i < projects.length; i++) {
       var cardDiv = $("<div>").addClass("card card-custom align-items-center");
-      cardDiv.attr("data-project", i);
+      cardDiv.attr("project-index", i);
       var imgEl = $("<img>").addClass("card-img-top");
-      imgEl.attr("src", projects[0].image);
-      imgEl.attr("alt", projects[0].imageAlt);
+      imgEl.attr("src", projects[i].image);
+      imgEl.attr("alt", projects[i].imageAlt);
       var cardBody = $("<div>").addClass("card-body");
       var cardTitle = $("<h3>").addClass("card-title");
-      cardTitle.text(projects[0].name);
+      cardTitle.text(projects[i].name);
       cardBody.append(cardTitle);
       cardDiv.append(imgEl);
       cardDiv.append(cardBody);
@@ -46,12 +47,20 @@ $(document).ready(function () {
 
   // Creates a the modal for the project that was clicked
   function displayProjectModal(e) {
-      $("#project-modal").modal("show");
+    var i = e.currentTarget.attributes[1].value;
+    $(".modal-title").text(projects[i].name);
+    $(".project-description").text(projects[i].description);
+    $(".project-technologies").text(projects[i].technologies);
+    $("#application-link").attr("href",projects[i].deployed);
+    $("#repository-link").attr("href",projects[i].repository);
+    $("#project-modal").modal("show");
   }
 
   // FUNCTION CALLS
   createProjectCards();
-  $(".card").on("click", displayProjectModal);
+  $(".card").on("click", function (e) {
+    displayProjectModal(e);
+  });
 
   // EVENT LISTENERS
 });
