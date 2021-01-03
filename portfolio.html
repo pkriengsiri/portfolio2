@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Pete Kriengsiri Portfolio Site| Portfolio</title>
+    <title>Pete Kriengsiri Portfolio Site | About Me</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -12,7 +12,19 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -23,105 +35,71 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand text-white bg-info font-weight-bold" href="./index.html"
-        >Pete Kriengsiri</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./portfolio.html"
-              >Portfolio<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">About</a>
-          </li>
-        </ul>
+    <nav class="navbar">
+      <div class="col-1" id="open-menu">
+        <i class="fas fa-bars fa-2x" id="hamburger-open"></i>
       </div>
-    </nav>
-    <!-- Content -->
-    <main class="container-fluid my-5">
-      <div class="row">
-        <div class="col-md-8 bg-white mx-3 p-3">
-          <!-- Header row -->
-          <div class="row">
-            <div class="col">
-              <h1 class="text-info font-weight-bold">Portfolio</h1>
-              <hr />
-            </div>
-          </div>
-          <!-- Content row 1-->
-          <div class="row">
-            <div class="col-lg-6 mb-3">
-                <img
-                class="img-fluid w-100"
-                src="./assets/images/horiseon.png"
-                alt="Screenshot of Horiseon code refactoring project"
-              />
-            </div>
-            <div class="col-lg-6 mb-3">
-                <img
-                class="img-fluid w-100"
-                src="./assets/images/scratch.png"
-                alt="Sratch-based find the cheese puffs game"
-              />
-            </div>
-          </div>
-          <!-- Content row 2-->
-          <div class="row">
-            <div class="col-lg-6 mb-3">
-              <img
-                class="img-fluid w-100"
-                src="./assets/images/lrmc.png"
-                alt="Georgia Tech LRMC webpage screenshot"
-              />
-            </div>
-            <div class="col-lg-6 mb-3">
-                <img
-                class="img-fluid w-100"
-                src="./assets/images/mantrada.png"
-                alt="Mantrada website home page screenshot"
-              />
-            </div>
-          </div>
-          <!-- Content row 3-->
-          <div class="row">
-            <div class="col-lg-6 mb-3">
-                <img
-                class="img-fluid w-100"
-                src="./assets/images/sous-vide.png"
-                alt="Simple sous-vide controller screen shot"
-              />
-            </div>
+      <div class="col-10">
+        <div class="row justify-content-center">
+          <a class="h1 font-weight-bold" href="./index.html">Pete Kriengsiri</a>
+        </div>
+      </div>
 
+      <div class="col-1"></div>
+    </nav>
+    <!-- End Navbar-->
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div id="close-menu">
+        <i class="fas fa-window-close fa-2x" id="hamburger-close"></i>
+      </div>
+      <div class="list-group list-group-flush sidebar-links">
+        <a href="./portfolio.html" class="list-group-item">Portfolio</a>
+        <a href="#" class="list-group-item">Resume</a>
+        <a href="./contact.html" class="list-group-item">Contact Me</a>
+        <a
+          href="https://github.com/pkriengsiri"
+          target="_blank"
+          class="list-group-item"
+          ><i class="fab fa-github-square"></i> GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/petekriengsiri/"
+          target="_blank"
+          class="list-group-item"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </div>
+    </div>
+
+    <!-- Content -->
+    <main class="container my-5" id="main">
+      <div class="row">
+        <div class="col">
+          <!-- Header row -->
+          <div class="row" id="banner">
+            <h1 class="font-weight-bold" id="main-header">My Portfolio</h1>
+            <hr />
+            <img
+              src="./assets/images/portfolio.jpg"
+              class="img-fluid"
+              id="circle-image"
+              alt="Picture of a circuit board"
+            />
+          </div>
+          <!-- Content row -->
+          <div class="row">
+            <div class="col"></div>
           </div>
         </div>
       </div>
     </main>
-    <!-- Footer -->
-    <footer class="footer bg-secondary">
-        <div class="container-fluid text-center">
-            <span>&#169; Copyright 2020 Pete Kriengsiri</span>
-        </div>
-    </footer>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>

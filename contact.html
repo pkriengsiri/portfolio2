@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Pete Kriengsiri Portfolio Site| Contact Form</title>
+    <title>Pete Kriengsiri Portfolio Site | About Me</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -12,10 +12,19 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    rel="stylesheet"
-    href="./assets/css/styles.css"
-/>
+      href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -26,75 +35,94 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand text-white bg-info font-weight-bold" href="./index.html">Pete Kriengsiri</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">About</a>
-          </li>
-        </ul>
+    <nav class="navbar">
+      <div class="col-1" id="open-menu">
+        <i class="fas fa-bars fa-2x" id="hamburger-open"></i>
       </div>
+      <div class="col-10">
+        <div class="row justify-content-center">
+          <a class="h1 font-weight-bold" href="./index.html">Pete Kriengsiri</a>
+        </div>
+      </div>
+
+      <div class="col-1"></div>
     </nav>
+    <!-- End Navbar-->
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div id="close-menu">
+        <i class="fas fa-window-close fa-2x" id="hamburger-close"></i>
+      </div>
+      <div class="list-group list-group-flush sidebar-links">
+        <a href="./portfolio.html" class="list-group-item">Portfolio</a>
+        <a href="#" class="list-group-item">Resume</a>
+        <a href="./contact.html" class="list-group-item">Contact Me</a>
+        <a
+          href="https://github.com/pkriengsiri"
+          target="_blank"
+          class="list-group-item"
+          ><i class="fab fa-github-square"></i> GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/petekriengsiri/"
+          target="_blank"
+          class="list-group-item"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </div>
+    </div>
+
     <!-- Content -->
-    <main class="container-fluid my-5">
-        <div class="row">
-            <div class="col-md-8 bg-white mx-3 p-3">
-                <!-- Header row -->
-                <div class="row">
-                    <div class="col">
-                        <h1 class="text-info font-weight-bold">Contact</h1>
-                        <hr>
-                    </div>
+    <main class="container my-5" id="main">
+      <div class="row">
+        <div class="col">
+          <!-- Header row -->
+          <div class="row" id="banner">
+            <h1 class="font-weight-bold" id="main-header">Contact Me</h1>
+            <hr />
+            <img
+              src="./assets/images/contact.jpg"
+              class="img-fluid"
+              id="circle-image"
+              alt="Picture of a circuit board"
+            />
+          </div>
+          <!-- Content row -->
+          <div class="row">
+            <div class="col">
+              <form class="w-75 ml-1">
+                <div class="form-group">
+                  <label for="formNameInput">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formNameInput"
+                    placeholder="Name"
+                  />
                 </div>
-                <!-- Content row -->
-                <div class="row">
-                    <div class="col">
-                        <form class="w-75 ml-1">
-                            <div class="form-group">
-                              <label for="formNameInput">Name</label>
-                              <input type="text" class="form-control" id="formNameInput" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="formEmailInput">Email</label>
-                                <input type="email" class="form-control" id="formEmailInput" placeholder="Email">
-                              </div>
-                            <div class="form-group">
-                              <label for="formMessageInput">Message</label>
-                              <textarea class="form-control" id="formMessageInput" rows="3">Message</textarea>
-                            </div>
-                        </form>
-                        <input class="btn btn-primary bg-info rounded-0 border-info" type="submit" value="Submit">
-                    </div>
+                <div class="form-group">
+                  <label for="formMessageInput">Message</label>
+                  <textarea class="form-control" id="formMessageInput" rows="3">
+Message</textarea
+                  >
                 </div>
+              </form>
+              <input
+                class="btn btn-primary bg-info rounded-0 border-info"
+                type="submit"
+                value="Send Email"
+              />
             </div>
+          </div>
         </div>
+      </div>
     </main>
-    <!-- Footer -->
-    <footer class="footer bg-secondary">
-        <div class="container-fluid text-center">
-            <span>&#169; Copyright 2020 Pete Kriengsiri</span>
-        </div>
-    </footer>
+
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
