@@ -12,13 +12,8 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -37,11 +32,12 @@
     ></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
+
   <body>
     <!-- Navbar-->
     <nav class="navbar">
       <div class="col-1" id="open-menu">
-        <i class="fas fa-bars fa-2x" id="hamburger-open"></i>
+        <h1 id="hamburger-open">&#9776;</h1>
       </div>
       <div class="col-10">
         <div class="row justify-content-center">
@@ -53,29 +49,31 @@
     </nav>
     <!-- End Navbar-->
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
+    <!-- Sidebar -->
+    <aside class="sidebar">
       <div id="close-menu">
         <i class="fas fa-window-close fa-2x" id="hamburger-close"></i>
       </div>
-      <div class="list-group list-group-flush sidebar-links">
+      <div class="list-group list-group-flush sidebar-links h4">
+        <a href="./index.html" class="list-group-item">About</a>
         <a href="./portfolio.html" class="list-group-item">Portfolio</a>
         <a href="#" class="list-group-item">Resume</a>
-        <a href="./contact.html" class="list-group-item">Contact Me</a>
+        <a href="./contact.html" class="list-group-item">Contact</a>
         <a
           href="https://github.com/pkriengsiri"
           target="_blank"
           class="list-group-item"
-          ><i class="fab fa-github-square"></i> GitHub</a
+          ><i class="fab fa-github-square mr-2"></i>GitHub</a
         >
         <a
           href="https://www.linkedin.com/in/petekriengsiri/"
           target="_blank"
           class="list-group-item"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
+          ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
         >
       </div>
-    </div>
+    </aside>
+    <!-- End Sidebar -->
 
     <!-- Content -->
     <main class="container my-5" id="main">
@@ -96,7 +94,7 @@
           <div class="row">
             <div class="col">
               <form class="w-75 ml-1">
-                <div class="form-group">
+                <div class="form-group" id="contact-form">
                   <label for="formNameInput">Name</label>
                   <input
                     type="text"
@@ -113,7 +111,7 @@ Message</textarea
                 </div>
               </form>
               <input
-                class="btn btn-primary bg-info rounded-0 border-info"
+                class="btn btn-primary bg-info rounded border-info ml-1 mb-3"
                 type="submit"
                 value="Send Email"
               />
@@ -123,6 +121,7 @@ Message</textarea
       </div>
     </main>
 
+    <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
