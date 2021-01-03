@@ -115,11 +115,29 @@ position: absolute;
 }
 
 #banner {
-    /* position: absolute;
-    top:0px;
-    left:0px; */
   background: transparent url(../images/banner.jpg) no-repeat center center /
     cover;
   height: 200px;
   margin-bottom: 100px;
 }
+
+@media screen and (max-width: 768px) {
+    #banner {
+        background: transparent url(../images/banner.jpg) no-repeat center center /
+          cover;
+        height: 120px;
+        margin-bottom: 80px;
+      }
+
+      #circle-image {
+        width: 150px;
+        top: 30px;
+      }
+
+      #main-header {
+        position: absolute;
+          left: 170px;
+          top: 125px;
+        }
+
+  }
