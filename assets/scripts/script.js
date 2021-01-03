@@ -8,7 +8,7 @@ $(document).ready(function() {
     
     function showSidebar() {
         console.log("clicked");
-        $(".sidebar").css("width","200px");
+        $(".sidebar").css("width","160px");
         //$("#main").css("margin-left","250px");
     }
 

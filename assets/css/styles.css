@@ -20,9 +20,15 @@ footer.border-top {
   margin-top: 5px;
 }
 
-html {
+/* html {
   position: relative;
   min-height: 100%;
+} */
+
+h1, h2, h3, h4, h5, .h1, .h2, h3, .h4, .h5 {
+    font-family: "Amatic SC","Lato", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 700;
 }
 
 /* Class selectors */
@@ -52,10 +58,7 @@ html {
 
 .navbar {
   background-color: #013A63;
-}
-
-.navbar-brand {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font: "Amatic SC";
 }
 
 .sidebar {
@@ -72,7 +75,7 @@ html {
 }
 
 .sidebar-links {
-  width: 180px;
+  width: 140px;
   margin-left: 10px;
 }
 
@@ -82,8 +85,8 @@ html {
 
 #main-header {
 position: absolute;
-  left: 275px;
-  top: 240px;
+  left: 260px;
+  top: 250px;
 }
 
 #close-menu {
@@ -118,7 +121,7 @@ position: absolute;
   background: transparent url(../images/banner.jpg) no-repeat center center /
     cover;
   height: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -137,7 +140,7 @@ position: absolute;
       #main-header {
         position: absolute;
           left: 170px;
-          top: 125px;
+          top: 135px;
         }
 
   }

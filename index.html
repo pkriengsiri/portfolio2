@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -37,15 +39,13 @@
   </head>
   <body>
     <!-- Navbar-->
-    <nav class="navbar shadow-lg">
+    <nav class="navbar">
       <div class="col-1" id="open-menu">
         <i class="fas fa-bars fa-2x" id="hamburger-open"></i>
       </div>
       <div class="col-10">
         <div class="row justify-content-center">
-          <a class="h1 font-weight-bold" href="./index.html"
-            >Pete Kriengsiri</a
-          >
+          <a class="h1 font-weight-bold" href="./index.html">Pete Kriengsiri</a>
         </div>
       </div>
 
@@ -58,44 +58,44 @@
       <div id="close-menu">
         <i class="fas fa-window-close fa-2x" id="hamburger-close"></i>
       </div>
-      <div class="list-group list-group-flush sidebar-links h5">
+      <div class="list-group list-group-flush sidebar-links h4">
         <a href="./index.html" class="list-group-item">About</a>
         <a href="./portfolio.html" class="list-group-item">Portfolio</a>
         <a href="#" class="list-group-item">Resume</a>
         <a href="./contact.html" class="list-group-item">Contact</a>
-        <a href="https://github.com/pkriengsiri" target="_blank" class="list-group-item"
-          ><i class="fab fa-github-square fa-2x mr-2"></i>GitHub</a
+        <a
+          href="https://github.com/pkriengsiri"
+          target="_blank"
+          class="list-group-item"
+          ><i class="fab fa-github-square mr-2"></i>GitHub</a
         >
-        <a href="https://www.linkedin.com/in/petekriengsiri/" target="_blank" class="list-group-item"
-          ><i class="fab fa-linkedin fa-2x mr-2"></i>LinkedIn</a
+        <a
+          href="https://www.linkedin.com/in/petekriengsiri/"
+          target="_blank"
+          class="list-group-item"
+          ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
         >
       </div>
     </div>
 
     <!-- Content -->
-    <main class="container my-2 rounded" id="main">
+    <main class="container my-3 rounded" id="main">
       <div class="row">
         <div class="col">
           <!-- Header row -->
           <div class="row rounded-top" id="banner">
             <h1 class="font-weight-bold" id="main-header">About Me</h1>
-              <hr />
-              <img
-                src="./assets/images/pete.png"
-                class="img-fluid"
-                id="circle-image"
-                alt="Headshot of Pete"
-              />
+            <hr />
+            <img
+              src="./assets/images/pete.png"
+              class="img-fluid"
+              id="circle-image"
+              alt="Headshot of Pete"
+            />
           </div>
           <!-- Content row -->
-          <div class="row">
+          <div class="row px-3">
             <div class="col">
-              <!-- <img
-                src="./assets/images/pete.png"
-                class="img-fluid float-left img-thumbnail mr-4 mb-2"
-                id="headshot"
-                alt="Headshot of Pete"
-              /> -->
               <p>
                 Welcome to my portfolio! I am an aspiring software developer
                 based in Atlanta, GA and currently enrolled in the Georgia Tech
@@ -103,7 +103,8 @@
                 performing work as an occupational safety and risk management
                 consultant both in the public and private sectors—most recently
                 with my company Mantrada LLC. A slowdown in work due to the
-                pandemic provided me with an opportunity to pursue a long-time dream.
+                pandemic provided me with an opportunity to pursue a long-time
+                dream.
               </p>
               <p>
                 I have always been technologically inclined-- My first computer
@@ -124,31 +125,21 @@
                 Other highlights of my personal and academic forays into
                 technology include:
               </p>
-              <ul class="my-list">
-                <li class="my-list-item">
-                  In high school, building the constructing the front-page for a
-                  family friend’s free internet service provider using HTML 3.
-                </li>
-                <li class="my-list-item">
-                  Designing personal websites for myself and friends using
-                  Wordpress and Movable Type
-                </li>
-                <li class="my-list-item">
-                  In college, learning JAVA in order to implement a dynamic
+              <ul class="list-group mb-3 mx-3">
+                <li class="list-group-item">In high school, building the constructing the front-page for a
+                  family friend’s free internet service provider using HTML 3.</li>
+                <li class="list-group-item">Designing personal websites for myself and friends using
+                  Wordpress and Movable Type</li>
+                <li class="list-group-item">In college, learning JAVA in order to implement a dynamic
                   program algorithm for determining the outcome NCAA tournament
-                  games and optimal bracket selections
-                </li>
-                <li class="my-list-item">
-                  Building web-controlled dog treat dispenser, which integrated
+                  games and optimal bracket selections</li>
+                <li class="list-group-item">Building web-controlled dog treat dispenser, which integrated
                   an off-the-shelf motorized treat dispenser, RF remote, webcam,
                   USB relay, windows-based web server, HTML, and JavaScript
-                  (wish I had patented this idea)
-                </li>
-                <li class="my-list-item">
-                  Creating a home-made sous-vide cooking device by integrating a
+                  (wish I had patented this idea)</li>
+                <li class="list-group-item">Creating a home-made sous-vide cooking device by integrating a
                   slow cooker, PID controller, solid state relay, thermocouples,
-                  and 110VAC outlets
-                </li>
+                  and 110VAC outlets</li>
               </ul>
               <p>
                 I have a B.S. in Industrial Engineering and an M.S. in Applied
