@@ -18,11 +18,51 @@ $(document).ready(function () {
       technologies:
         "HTML, CSS, JavaScript, jQuery, BootStrap, Font-Awesome, jQuery QR code library, paste.ee API, html2pdf API, orghunter charity search API, google maps API",
       repository: "https://github.com/pkriengsiri/whats-in-the-box",
-      deployed: "https://github.com/pkriengsiri/whats-in-the-box",
+      deployed: "https://pkriengsiri.github.io/whats-in-the-box/",
       image: "./assets/images/box.png",
       imageAlt: "screenshot of What's in the Box? application",
       gif: "",
     },
+    {
+        name: "Weather Dashboard",
+        description: "A weather dashboard that displays the weather outlook for multiple cities using the OpenWeather API",
+        technologies: "HTML, CSS, Bootstrap CSS Framework, JavaScript, jQuery, and the font-awesome icon pack",
+        repository: "https://github.com/pkriengsiri/weather-dashboard",
+        deployed: "https://pkriengsiri.github.io/weather-dashboard/",
+        image: "./assets/images/weather.png",
+        imageAlt: "screenshot of Weather Dashboard application",
+        gif: "",
+      }, 
+      {
+        name: "Coding Quiz Challenge",
+        description: "An HTML-based coding quiz game, dynamically updated and tracked using DOM manipulation and local storage",
+        technologies: "HTML, CSS, Bootstrap CSS Framework, and JavaScript",
+        repository: "https://github.com/pkriengsiri/code-quiz-game",
+        deployed: "https://pkriengsiri.github.io/code-quiz-game/",
+        image: "./assets/images/quiz.png",
+        imageAlt: "screenshot of Coding Quiz Challenge application",
+        gif: "",
+      },
+      {
+        name: "Workday Planner",
+        description: "A simple workday planning application using HTML, CSS and jQuery",
+        technologies: "HTML, CSS, JavaScript, jQuery, Font Awesome",
+        repository: "https://github.com/pkriengsiri/workday-planner",
+        deployed: "https://pkriengsiri.github.io/workday-planner/",
+        image: "./assets/images/planner.png",
+        imageAlt: "screenshot of Workday Planner application",
+        gif: "",
+      }, 
+      {
+        name: "Password Generator",
+        description: "A simple password generator which uses modal windows to solicit the user's parameters for the password, and generates a random password based upon the user selections.",
+        technologies: "HTML, CSS, JavaScript",
+        repository: "https://github.com/pkriengsiri/password-generator",
+        deployed: "https://pkriengsiri.github.io/password-generator/",
+        image: "./assets/images/password.png",
+        imageAlt: "screenshot of the Password Generator application",
+        gif: "",
+      }
   ];
 
   // FUNCTION DEFINITIONS
@@ -58,9 +98,9 @@ $(document).ready(function () {
 
   // FUNCTION CALLS
   createProjectCards();
+  
+  // EVENT LISTENERS
   $(".card").on("click", function (e) {
     displayProjectModal(e);
   });
-
-  // EVENT LISTENERS
 });
