@@ -17,10 +17,6 @@ body {
   background-color: #468faf;
 }
 
-footer.border-top {
-  margin-top: 5px;
-}
-
 h1,
 h2,
 h3,
@@ -53,8 +49,9 @@ html {
   width: 100%;
   height: 30px;
   line-height: 25px;
-  color: #FFF;
+  color: rgb(195, 195, 195);
   background-color: #013a63;
+  font-family: "Amatic SC", "Courier New", Courier, monospace;
 }
 
 .list-group-item {
@@ -114,6 +111,15 @@ html {
   left: 20px;
   top: 50px;
   border: 2px solid #fff;
+}
+
+#contact-form {
+    border-right: 1px solid white;
+    padding-right: 15px;
+}
+
+#contact-warning {
+    color: red;
 }
 
 #main {

@@ -12,8 +12,11 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -37,7 +40,7 @@
     <!-- Navbar-->
     <nav class="navbar">
       <div class="col-1" id="open-menu">
-        <h1 id="hamburger-open">&#9776;</h1>
+        <i class="fas fa-bars fa-2x" id="hamburger-open"></i>
       </div>
       <div class="col-10">
         <div class="row justify-content-center">
@@ -92,29 +95,52 @@
           </div>
           <!-- Content row -->
           <div class="row">
-            <div class="col">
-              <form class="w-75 ml-1">
-                <div class="form-group" id="contact-form">
-                  <label for="formNameInput">Name</label>
+            <div class="col-8">
+              <form class="ml-1" id="contact-form">
+                <h3>Form:</h3>
+                <div class="form-group">
+                  <label for="subject-input">Subject</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="formNameInput"
-                    placeholder="Name"
+                    id="subject-input"
+                    placeholder="Subject"
                   />
                 </div>
                 <div class="form-group">
-                  <label for="formMessageInput">Message</label>
-                  <textarea class="form-control" id="formMessageInput" rows="3">
-Message</textarea
+                  <label for="message-input">Message</label>
+                  <textarea class="form-control" id="message-input" rows="3" placeholder="Message">
+</textarea
                   >
                 </div>
               </form>
+              <p class="d-none ml-1" id="contact-warning">I need both fields filled out before you can send me an email!</p>
               <input
                 class="btn btn-primary bg-info rounded border-info ml-1 mb-3"
                 type="submit"
                 value="Send Email"
+                id="email-button"
               />
+            </div>
+            <div class="col-4 p-0">
+              <h3>Links:</h3>
+              <a
+                href="https://github.com/pkriengsiri"
+                target="_blank"
+                ><i class="fab fa-github-square mr-2"></i>GitHub</a
+              >
+              <br>
+              <a
+                href="https://www.linkedin.com/in/petekriengsiri/"
+                target="_blank"
+                ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
+              >
+              <br>
+              <a
+                href="mailto:pkriengsiri@gmail.com"
+                target="_blank"
+                ><i class="far fa-envelope mr-2"></i></i>Email</a
+              >
             </div>
           </div>
         </div>
@@ -132,7 +158,6 @@ Message</textarea
     <script src="./assets/scripts/script.js"></script>
     <!-- End footer -->
 
-    <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/contact.js"></script>
   </body>
 </html>
