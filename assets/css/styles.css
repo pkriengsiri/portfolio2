@@ -97,6 +97,7 @@ position: absolute;
   position: absolute;
   left: 20px;
   top: 50px;
+  border: 2px solid #fff;
 }
 
 #open-menu:hover {
