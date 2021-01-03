@@ -13,7 +13,6 @@ body {
   margin-bottom: 40px;
   font-family: "Courier New", Courier, monospace;
   /* font-family: Arial, Helvetica, sans-serif; */
-
   background-color: #468faf;
 }
 
@@ -57,6 +56,14 @@ html {
 
 .list-group-item {
   background-color: #01497c;
+}
+
+.modal-content {
+    background-color: #01497c;
+    color: #fff;
+}
+.modal-image {
+    width: 100%;
 }
 
 .my-list {
@@ -142,6 +149,9 @@ html {
 #open-menu {
   color: #a9d6e5;
 }
+
+
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {

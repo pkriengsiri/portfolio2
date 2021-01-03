@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   // Creates a project card and appends it to the DOM
   function createProjectCards() {
-    for (var i = 0; i < projects.length(); i++) {
+    for (var i = 0; i < projects.length; i++) {
       var cardDiv = $("<div>").addClass("card card-custom align-items-center");
       cardDiv.attr("data-project", i);
       var imgEl = $("<img>").addClass("card-img-top");
@@ -44,8 +44,14 @@ $(document).ready(function () {
     }
   }
 
+  // Creates a the modal for the project that was clicked
+  function displayProjectModal(e) {
+      $("#project-modal").modal("show");
+  }
+
   // FUNCTION CALLS
   createProjectCards();
+  $(".card").on("click", displayProjectModal);
 
   // EVENT LISTENERS
 });
