@@ -3,39 +3,42 @@ Portfolio for Pete Kriengsiri
 
 ## Description
 
-This application is a single-page weather dashboard.  It was created using HTML, CSS, Bootstrap CSS Framework, JavaScript, jQuery, and the font-awesome icon pack.  The application uses jQuery AJAX calls to the Open Weather API to obtain weather and UV information.  This dashboard allows the user to input a desired city, and will present the user with current weather conditions as well as a five day forecast.
+This application is three page personal portfolio.  It was created using HTML, CSS, Bootstrap CSS Framework, JavaScript, jQuery, and the font-awesome icon pack.  
 
 ### Features
-* Current weather conditions and five day forecast for a user selected city 
-* UV index, with color coding based upon the severity of the exposure as defined by the US EPA
-* User searches are saved in localStorage for up to the last 10 cities searched
-* When the user reopens the application, it will display the last city searched in addition to a listing of previous cities searched
-* Clicking on a previous search button will redisplay the current weather and forecast for that city
-* The application will provide a warning to the user if the city entered into the search field does not match a city in the Open Weather API database
+* Three sections including about me, portfolio, and contact
+* Collapsible sidebar featuring the sites navigation links as well as links to external resources
+* Cards and modal windows for displaying portfolio projects
+* Contact form which auto populates an email to the site author
+* Responsive layout suitable for mobile and desktop browsers
 
 ## Installation
-Upload index.html, LICENSE, and assets folder to the deployed webserver.  Assets folder contains JavaScript, CSS files, and images.
+Upload index.html, contact.html, portfolio.html, LICENSE, and assets folder to the deployed webserver.  The assets folder contains JavaScript, CSS files, and images.
 
 The application shown below was deployed using GitHub Pages.  The repository can be replicated by via fork, clone, and redeployment with GitHub Pages.
 
-Link to repository: https://github.com/pkriengsiri/weather-dashboard
+Link to repository: https://github.com/pkriengsiri/portfolio 
 
 ## Usage
-Upon accessing the application for the first time, the user will only be presented with a search field where they can enter their desired city.  After the first search, current weather, 5 day forecast, and a listing of previous searches will appear.  Previous cities searched will be stored in localStorage and will be recalled the next time the user accesses the application. 
+The user can access the sidebar by clicking on the hamburger menu icon in the top left corner of the application.  The sidebar contains links to the other sections of the application.  
 
-Link to deployed instance of the application: https://pkriengsiri.github.io/weather-dashboard/
+Link to deployed instance of the application: https://pkriengsiri.github.io/portfolio/
 
-![screenshot of application](./assets/images/app_screenshot.png)
+![screenshot of about me page](./assets/images/app_screenshot1.png)
+![screenshot of portfolio page](./assets/images/app_screenshot2.png)
+![screenshot of portfolio page modal](./assets/images/app_screenshot3.png)
+![screenshot of contact page with expanded sidebar](./assets/images/app_screenshot4.png)
 
 ## Credits
-Collaborators on this project included instructional staff, TAs, and students in the Georgia Tech Coding Boot Camp Winter 2020 cohort.   Stock pictures from ![Aaron Burden]
+Thanks to my wife, Julie, who took the picture of me.
 
+Stock pictures from [Aaron Burden](https://unsplash.com/@aaronburden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Chris Ried](https://unsplash.com/@cdr6934?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), and [Ben Dutton](https://unsplash.com/@benjamiindutton?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/).
 
+Color palette from [coolers.co](https://coolors.co/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5). 
 
-### Referenced Utilized
-* https://openweathermap.org/api
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-* https://api.jquery.com/deferred.then/
+### References Utilized
+* https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+* https://getbootstrap.com/docs/4.0/components/modal/ 
 
 
 ## License
@@ -63,18 +66,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Badges
-[![GitHub issues](https://img.shields.io/github/issues/pkriengsiri/weather-dashboard)](https://github.com/pkriengsiri/weather-dashboard/issues)
-[![GitHub stars](https://img.shields.io/github/stars/pkriengsiri/weather-dashboard)](https://github.com/pkriengsiri/weather-dashboard/stargazers)
-[![GitHub license](https://img.shields.io/github/license/pkriengsiri/weather-dashboard)](https://github.com/pkriengsiri/weather-dashboard/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/pkriengsiri/portfolio)](https://github.com/pkriengsiri/portfolio/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/pkriengsiri/portfolio)](https://github.com/pkriengsiri/portfolio/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/pkriengsiri/portfolio)](https://github.com/pkriengsiri/portfolio/issues)
 
 ## Contributing
 
 This project is not accepting contributions at this time.
-
-
- 
-
-
-<span>Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/contact?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-<span>Photo by <a href="https://unsplash.com/@cdr6934?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Chris Ried</a> on <a href="https://unsplash.com/s/photos/circuit-board?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-<span>Photo by <a href="https://unsplash.com/@benjamiindutton?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ben Dutton</a> on <a href="https://unsplash.com/@benjamiindutton?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
