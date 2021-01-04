@@ -91,6 +91,7 @@ $(document).ready(function () {
     $(".modal-title").text(projects[i].name);
     $(".project-description").text(projects[i].description);
     $(".project-technologies").text(projects[i].technologies);
+    $("#project-image").attr("src",projects[i].image);
     $("#application-link").attr("href",projects[i].deployed);
     $("#repository-link").attr("href",projects[i].repository);
     $("#project-modal").modal("show");
