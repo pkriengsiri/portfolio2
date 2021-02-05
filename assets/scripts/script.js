@@ -8,7 +8,7 @@ $(document).ready(function () {
   // Makes the sidebar appear
   function showSidebar() {
     console.log("clicked");
-    $(".sidebar").css("width", "160px");
+    $(".sidebar").css("width", "200px");
     //$("#main").css("margin-left","250px");
   }
 
