@@ -43,6 +43,16 @@ html {
   background-color: #01497c;
 }
 
+.devicon {
+  font-size: 5rem;
+  color: white;
+}
+
+.devicon:hover {
+  font-size: 5rem;
+  color: #468faf;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
