@@ -12,6 +12,18 @@ $(document).ready(function () {
   };
   var projects = [
     {
+      name: "Bird Brains",
+      description:
+        "A gamified bird-watching application",
+      technologies:
+        "HTML, CSS, JavaScript, jQuery, Materialize, Font-Awesome, Slick, Cloudinary API, Node.js, Express, Express Handlebars, Sequelize, ES Lint, Moment",
+      repository: "https://github.com/pkriengsiri/bird-brains",
+      deployed: "https://bird-brains.herokuapp.com/",
+      image: "./assets/images/bird.png",
+      imageAlt: "screenshot of Bird Brains application",
+      gif: "",
+    },
+    {
       name: "What's in the Box?",
       description:
         "An application for tracking the context of boxes packed for household moving and storage projects",
@@ -21,6 +33,42 @@ $(document).ready(function () {
       deployed: "https://pkriengsiri.github.io/whats-in-the-box/",
       image: "./assets/images/box.png",
       imageAlt: "screenshot of What's in the Box? application",
+      gif: "",
+    },
+    {
+      name: "Burger Eater!",
+      description:
+        "A full-stack burger eating simulator",
+      technologies:
+        "HTML, CSS, JavaScript, BootStrap, Node.js, Express, Express Handlebars, MySQL, custom ORM",
+      repository: "https://github.com/pkriengsiri/burger-eater",
+      deployed: "https://burger-experience.herokuapp.com/",
+      image: "./assets/images/burger.png",
+      imageAlt: "screenshot of Burger Eater application",
+      gif: "",
+    },
+    {
+      name: "Employee Tracker",
+      description:
+        "A command-line CMS for managing employee data",
+      technologies:
+        "Node.js, MySQL, Inquirer",
+      repository: "https://github.com/pkriengsiri/employee-tracker",
+      deployed: "https://github.com/pkriengsiri/employee-tracker",
+      image: "./assets/images/employee.png",
+      imageAlt: "screenshot of Employee Tracker application",
+      gif: "",
+    },
+    {
+      name: "Note Taker",
+      description:
+        "An app for creating, saving, editing and deleting plain text notes.",
+      technologies:
+        "HTML, CSS, JavaScript, jQuery, BootStrap, Node.js, Express",
+      repository: "https://github.com/pkriengsiri/note-taker",
+      deployed: "https://note-taker-dpk.herokuapp.com/",
+      image: "./assets/images/note.png",
+      imageAlt: "screenshot of Note Taker application",
       gif: "",
     },
     {
